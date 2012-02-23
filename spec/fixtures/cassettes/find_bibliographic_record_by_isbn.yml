@@ -1,0 +1,74 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.worldcat.org:80/webservices/catalog/content/isbn/0395071224?wskey=<WSKEY>
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 23 Feb 2012 15:03:41 GMT
+      server:
+      - Apache
+      content-length:
+      - '4101'
+      content-type:
+      - text/xml;charset=utf-8
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000   4500</leader>\n
+      \   <controlfield tag=\"001\">50894</controlfield>\n    <controlfield tag=\"008\">700122s1966
+      \   maua   j      000 1 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"010\">\n      <subfield code=\"a\">   67029221 </subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">0395177111</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9780395177112</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">0395071224</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9780395071229</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">0395282659 (pbk.)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9780395282656 (pbk.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Tolkien, J. R.
+      R.</subfield>\n      <subfield code=\"q\">(John Ronald Reuel),</subfield>\n
+      \     <subfield code=\"d\">1892-1973.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\"0\" tag=\"240\">\n      <subfield code=\"a\">Hobbit</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"4\" tag=\"245\">\n      <subfield
+      code=\"a\">The hobbit, or, There and back again,</subfield>\n      <subfield
+      code=\"c\">by J.R.R. Tolkien. Illustrated by the author.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">Boston,</subfield>\n
+      \     <subfield code=\"b\">Houghton Mifflin</subfield>\n      <subfield code=\"c\">[c1966]</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">317 p.</subfield>\n      <subfield code=\"b\">illus.</subfield>\n
+      \     <subfield code=\"c\">21 cm.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"0\" ind2=\" \" tag=\"505\">\n      <subfield code=\"a\">Unexpected party
+      -- Roast mutton -- Short rest -- Over hill and under hill -- Riddles in thh
+      dark -- Out of the frying-pan into the fire -- Queer lodgings -- Flies and spiders
+      -- Barrels out of bond --- Warm welcome -- On the doorstep -- Inside information
+      -- Not at home -- Fire and water -- Gathering of the clouds -- Thief in the
+      night -- Clouds burst -- Return journey -- Last stage.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"520\">\n      <subfield code=\"a\">The
+      adventures of the well-to-do hobbit, Bilbo Baggins, who lived happily in his
+      comfortable home until a wandering wizard granted his wish.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Middle
+      Earth (Imaginary place)</subfield>\n      <subfield code=\"v\">Fiction.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Baggins, Bilbo (Fictitious character)</subfield>\n      <subfield
+      code=\"v\">Fiction.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Hobbits (Fictitious characters)</subfield>\n
+      \     <subfield code=\"v\">Fiction.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Wizards</subfield>\n
+      \     <subfield code=\"v\">Fiction.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Adventure stories.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"1\" tag=\"650\">\n      <subfield
+      code=\"a\">Fantasy.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\"6\" tag=\"650\">\n      <subfield code=\"a\">Terre du Milieu (Lieu imaginaire)</subfield>\n
+      \     <subfield code=\"v\">Romans, nouvelles, etc.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"655\">\n      <subfield code=\"a\">Fantasy
+      fiction, English.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"7\"
+      tag=\"655\">\n      <subfield code=\"a\">Fantastic fiction.</subfield>\n      <subfield
+      code=\"2\">gsafd</subfield>\n    </datafield>\n  </record>\n"
+    http_version: '1.1'

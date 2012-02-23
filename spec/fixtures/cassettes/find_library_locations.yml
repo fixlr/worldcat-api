@@ -1,0 +1,431 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.worldcat.org:80/webservices/catalog/content/libraries/50894?wskey=<WSKEY>
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 23 Feb 2012 15:03:41 GMT
+      server:
+      - Apache
+      transfer-encoding:
+      - chunked
+      content-type:
+      - text/xml;charset=utf-8
+    body: ! '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+      <holdings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.loc.gov/standards/iso20775/N121_ISOholdings_v4.xsd">
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>NYG</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>New York State Library</physicalLocation>
+
+      <physicalAddress>
+
+      <text>ALBANY, NY 12230 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Fnysl.nysed.gov%2Fuhtbin%2Fcgisirsi%2Fx%2F0%2F0%2F5%2F%3Fsearchdata1%3D0395071224%26checksum%3D1c2f251fe6246d6984af8a02afe5a1f8&amp;title=New+York+State+Library&amp;linktype=opac&amp;detail=NYG%3ANew+York+State+Library%3AState
+      or National Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>VJN</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>College of Saint Rose Library</physicalLocation>
+
+      <physicalAddress>
+
+      <text>ALBANY, NY 12203 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Flibdb.strose.edu%2Fcgi-bin%2FPwebrecon.cgi%3FDB%3Dlocal%26CNT%3D25%26HIST%3D1%26BOOL1%3Das%2B+a%2Bphrase%26FLD1%3DISBN%2B%2528ISBN%2529%26SAB1%3D0345339681%26checksum%3D1558ac77dc1e569122005508f1ce00e8&amp;title=College+of+Saint+Rose+Library&amp;linktype=opac&amp;detail=VJN%3ACollege+of+Saint+Rose+Library%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>NAM</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>University at Albany</physicalLocation>
+
+      <physicalAddress>
+
+      <text>ALBANY, NY 12222 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Fp8991-libms3.albany.edu.libproxy.albany.edu%2FF%2F%3Ffunc%3Dfind-e%26find_scan_code%3DSCAN_ISBN%26request%3D0395071224%26checksum%3D5c030a31a651fdc6eb24f13aea4c70cf&amp;title=University+at+Albany&amp;linktype=opac&amp;detail=NAM%3AUniversity+at+Albany%3AARL
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>VXV</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>Hudson Valley Community College</physicalLocation>
+
+      <physicalAddress>
+
+      <text>TROY, NY 12180 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Fdelaware.sunyconnect.suny.edu%3A4740%2FF%2F%3Ffunc%3Dfind-a%26find_code%3D020%26request%3D0395071224%26checksum%3Dc9cc40374eb76f15e0502e46f6f8c9c1&amp;title=Hudson+Valley+Community+College&amp;linktype=opac&amp;detail=VXV%3AHudson+Valley+Community+College%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>ZRS</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>The Sage Colleges Libraries</physicalLocation>
+
+      <physicalAddress>
+
+      <text>TROY, NY 12180 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Flibrary.sage.edu%2Fuhtbin%2Fcgisirsi%2Fx%2F0%2F0%2F5%2F%3Fsearchdata1%3D0395071224%26checksum%3D1707d52bc36a059333df9a9d78486825&amp;title=The+Sage+Colleges+Libraries&amp;linktype=opac&amp;detail=ZRS%3AThe+Sage+Colleges+Libraries%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>BCS</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>BOCES, Albany</physicalLocation>
+
+      <physicalAddress>
+
+      <text>LATHAM, NY 12110 United States</text>
+
+      </physicalAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>ZWU</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>Union College</physicalLocation>
+
+      <physicalAddress>
+
+      <text>SCHENECTADY, NY 12308 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Flibraryopac.union.edu%2Fsearch%2F%3Fsearchtype%3Di%26searcharg%3D0395476909%26checksum%3D12bf56873d13a08bfccfa9eaf215b1b6&amp;title=Union+College&amp;linktype=opac&amp;detail=ZWU%3AUnion+College%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>XJM</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>Schenectady County Community College</physicalLocation>
+
+      <physicalAddress>
+
+      <text>SCHENECTADY, NY 12305 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Fsch.sunyconnect.suny.edu%3A4850%2FF%2F%3Ffunc%3Dfind-b%26find_code%3DISBN%26request%3D0395362903%26checksum%3Dd3388536d2b49046f50baad47225d482&amp;title=Schenectady+County+Community+College&amp;linktype=opac&amp;detail=XJM%3ASchenectady+County+Community+College%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>VDH</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>Columbia Greene Community College Library</physicalLocation>
+
+      <physicalAddress>
+
+      <text>HUDSON, NY 12534 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Fdelaware.sunyconnect.suny.edu%3A4650%2FF%2F%3Ffunc%3Dfind-a%26find_code%3D020%26request%3D0618002219%26checksum%3D0075bc66260b9a4d385968c9f34c3708&amp;title=Columbia+Greene+Community+College+Library&amp;linktype=opac&amp;detail=VDH%3AColumbia+Greene+Community+College+Library%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>WCM</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>Williams College</physicalLocation>
+
+      <physicalAddress>
+
+      <text>WILLIAMSTOWN, MA 01267 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/50894?page=frame&amp;url=http%3A%2F%2Ffrancis.williams.edu%2Fsearch%2Fi%3D0618134700%26checksum%3D66be441048680fd949c37e4ea4d3dc6b&amp;title=Williams+College&amp;linktype=opac&amp;detail=WCM%3AWilliams+College%3AAcademic
+      Library&amp;app=wcapi&amp;id=Z4F-SUNY+Office+of+Library+and+Information+Services</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      </holdings>
+
+'
+    http_version: '1.1'

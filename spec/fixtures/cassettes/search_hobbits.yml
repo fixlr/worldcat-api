@@ -1,0 +1,590 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.worldcat.org:80/webservices/catalog/search/sru?query=hobbits&wskey=<WSKEY>
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 23 Feb 2012 15:03:40 GMT
+      server:
+      - Apache
+      transfer-encoding:
+      - chunked
+      content-type:
+      - text/xml;charset=utf-8
+    body: ! "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<?xml-stylesheet
+      type=\"text/xsl\" href=\"/webservices/catalog/xsl/searchRetrieveResponse.xsl\"?>\n\n<searchRetrieveResponse
+      xmlns=\"http://www.loc.gov/zing/srw/\" xmlns:oclcterms=\"http://purl.org/oclc/terms/\"
+      xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:diag=\"http://www.loc.gov/zing/srw/diagnostic/\"
+      xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<version>1.1</version>\n<numberOfRecords>455</numberOfRecords>\n<records>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000 a 4500</leader>\n
+      \   <controlfield tag=\"001\">44811773</controlfield>\n    <controlfield tag=\"008\">000804s2001
+      \   nyu      b    001 0 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"010\">\n      <subfield code=\"a\">   00062591 </subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">0312238266</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9780312238261</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Stanton, Michael N.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"0\" tag=\"245\">\n      <subfield
+      code=\"a\">Hobbits, elves, and wizards :</subfield>\n      <subfield code=\"b\">exploring
+      the wonders and worlds of J.R.R. Tolkien's \"The Lord of the rings\" /</subfield>\n
+      \     <subfield code=\"c\">Michael N. Stanton.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">New
+      York :</subfield>\n      <subfield code=\"b\">St. Martin's Press,</subfield>\n
+      \     <subfield code=\"c\">2001.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield code=\"a\">xii, 192 p. ;</subfield>\n
+      \     <subfield code=\"c\">22 cm.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"0\" ind2=\" \" tag=\"505\">\n      <subfield code=\"a\">[Part I]  Backgrounds
+      -- Geography, history, theme -- The Fellowship of the Ring: Prologue and Book
+      -- The Fellowship of the Ring: Book II -- A short interlude -- The Two Towers:
+      Book III -- The Two Towers: Book IV -- The Return of the King: Book V -- The
+      Return of the King: Book VI -- [Part II] The elves -- The dwarves -- The ents
+      -- Humankind -- Darkness, evil, and forms of the enemy -- On languages -- Mind,
+      spirit, and dream in The Lord of the Rings.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien, J. R.
+      R.</subfield>\n      <subfield code=\"q\">(John Ronald Reuel),</subfield>\n
+      \     <subfield code=\"d\">1892-1973.</subfield>\n      <subfield code=\"t\">Lord
+      of the rings.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\"
+      tag=\"650\">\n      <subfield code=\"a\">Fantasy fiction, English</subfield>\n
+      \     <subfield code=\"x\">History and criticism.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Middle
+      Earth (Imaginary place)</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Hobbits (Fictitious characters)</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a22000004a 4500</leader>\n
+      \   <controlfield tag=\"001\">76481584</controlfield>\n    <controlfield tag=\"008\">061109s2007
+      \   nyuabf   b    000 0 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"010\">\n      <subfield code=\"a\">  2006052267</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">9780060899080</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">0060899085</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Morwood, M. J.</subfield>\n
+      \     <subfield code=\"q\">(Mike J.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\"2\" tag=\"245\">\n      <subfield code=\"a\">A new human :</subfield>\n
+      \     <subfield code=\"b\">the startling discovery and strange story of the
+      \"hobbits\" of Flores, Indonesia /</subfield>\n      <subfield code=\"c\">Mike
+      Morwood and Penny van Oosterzee.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"250\">\n      <subfield code=\"a\">1st Smithsonian
+      Books ed.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \"
+      tag=\"260\">\n      <subfield code=\"a\">New York :</subfield>\n      <subfield
+      code=\"b\">Smithsonian Books/Collins,</subfield>\n      <subfield code=\"c\">2007.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">xiii, 256 p., [16] p. of plates :</subfield>\n      <subfield code=\"b\">ill.,
+      maps ;</subfield>\n      <subfield code=\"c\">24 cm.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"0\" ind2=\" \" tag=\"505\">\n      <subfield code=\"a\">1.
+      In the footsteps of the father -- 2. Stories from Cold Cave -- 3. Planning the
+      project -- 4. A body of evidence -- 5. The devil of dogma -- 6. Out of Asia
+      -- 7. Islands in the evolutionary stream -- 8. The reactions -- 9. Something
+      old, something new, something borrowed, something blue.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"520\">\n      <subfield code=\"a\">In
+      October 2004, a team of Australian and Indonesian anthropologists led by Mike
+      Moorwood and Raden Pandji Soejono stunned the world with their announcement
+      of the discovery of the first example of a new species of human, \"Homo floresiensis,\"
+      which the nicknamed the \"Hobbit.\" Standing only three feet tall with brains
+      a little larger than a can of cola, the Hobbits forced anthropologists and everyone
+      to reconsider what it means to be human.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Fossil hominids</subfield>\n
+      \     <subfield code=\"z\">Indonesia</subfield>\n      <subfield code=\"z\">Flores
+      Island.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n
+      \     <subfield code=\"a\">Fossil hominids</subfield>\n      <subfield code=\"z\">Australia</subfield>\n
+      \     <subfield code=\"z\">Kimberley (W.A.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Pygmies</subfield>\n
+      \     <subfield code=\"z\">Indonesia</subfield>\n      <subfield code=\"z\">Flores
+      Island.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n
+      \     <subfield code=\"a\">Pygmies</subfield>\n      <subfield code=\"z\">Australia</subfield>\n
+      \     <subfield code=\"z\">Kimberley (W.A.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Human beings</subfield>\n
+      \     <subfield code=\"x\">Migrations.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Excavations (Archaeology)</subfield>\n
+      \     <subfield code=\"z\">Indonesia</subfield>\n      <subfield code=\"z\">Flores
+      Island.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n
+      \     <subfield code=\"a\">Excavations (Archaeology)</subfield>\n      <subfield
+      code=\"z\">Australia</subfield>\n      <subfield code=\"z\">Kimberley (W.A.)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Human remains (Archaeology)</subfield>\n      <subfield code=\"z\">Indonesia</subfield>\n
+      \     <subfield code=\"z\">Flores Island.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Human remains
+      (Archaeology)</subfield>\n      <subfield code=\"z\">Australia</subfield>\n
+      \     <subfield code=\"z\">Kimberley (W.A.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"651\">\n      <subfield code=\"a\">Flores Island
+      (Indonesia)</subfield>\n      <subfield code=\"x\">Antiquities.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"651\">\n      <subfield
+      code=\"a\">Kimberley (W.A.)</subfield>\n      <subfield code=\"x\">Antiquities.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Van Oosterzee, Penny.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"4\" ind2=\"2\" tag=\"856\">\n      <subfield code=\"3\">Contributor biographical
+      information</subfield>\n      <subfield code=\"u\">http://catdir.loc.gov/catdir/enhancements/fy0911/2006052267-b.html</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"2\" tag=\"856\">\n      <subfield
+      code=\"3\">Publisher description</subfield>\n      <subfield code=\"u\">http://catdir.loc.gov/catdir/enhancements/fy0911/2006052267-d.html</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000Ma 4500</leader>\n
+      \   <controlfield tag=\"001\">608624663</controlfield>\n    <controlfield tag=\"008\">080801s2008
+      \   njuab   ob    001 0 eng d</controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"a\">9789812797445 (electronic bk.)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9812797440 (electronic bk.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"z\">9789812797421
+      (hardcover)</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"z\">9812797424 (hardcover)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"z\">9789812797438 (softcover)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"z\">9812797432 (softcover)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"100\">\n      <subfield
+      code=\"a\">Oxnard, Charles E.,</subfield>\n      <subfield code=\"d\">1933-</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"0\" tag=\"245\">\n      <subfield
+      code=\"a\">Ghostly muscles, wrinkled brains, heresies and Hobbits</subfield>\n
+      \     <subfield code=\"h\">[electronic resource] /</subfield>\n      <subfield
+      code=\"c\">Charles Oxnard.</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">Hackensack, NJ :</subfield>\n
+      \     <subfield code=\"b\">World Scientific,</subfield>\n      <subfield code=\"c\">c2008.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">1 online resource (xxiii, 470 p.) :</subfield>\n      <subfield code=\"b\">ill.
+      (some col.), col. maps.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"490\">\n      <subfield code=\"a\">A Leverhulme public lecture
+      series</subfield>\n    </datafield>\n    <datafield ind1=\"0\" ind2=\" \" tag=\"505\">\n
+      \     <subfield code=\"a\">The shape of bones : tension and compression -- A
+      fifty year love affair with spongy bone -- Ghosts of the past : muscles and
+      bones -- Reversing development : from adult to gene! -- Now you see it, now
+      you don't : hidden aspects of form -- The origins of ancient humans : 8,004,004
+      BC! -- Modern humans and heresies -- Homo floresiensis : a very cold case! --
+      Brains, babies and vitamin B12 -- New wrinkles on old brains -- The wonder of
+      human evolution.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"520\">\n      <subfield code=\"a\">The Leverhulme Trust (UK) required
+      Charles Oxnard to present a series of public lectures during his tenure of a
+      Leverhulme Professorship at University College, London. The lectures had to
+      be understandable not only to undergraduate and graduate students and colleagues,
+      but also to the interested lay public. Furthermore, they were expected to meet
+      and venture beyond present-day thought in the subject. This near-impossible
+      task is reproduced in this unique volume.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Anatomy.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Human evolution.</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Physical anthropology.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"2\" tag=\"650\">\n      <subfield
+      code=\"a\">Anatomy.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\"2\" tag=\"650\">\n      <subfield code=\"a\">Evolution.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"2\" ind2=\"2\" tag=\"650\">\n      <subfield
+      code=\"a\">Adaptation, Physiological.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"2\" ind2=\"2\" tag=\"650\">\n      <subfield code=\"a\">Anthropology,
+      Physical.</subfield>\n    </datafield>\n    <datafield ind1=\"2\" ind2=\"2\"
+      tag=\"650\">\n      <subfield code=\"a\">Research</subfield>\n      <subfield
+      code=\"x\">methods.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\"7\" tag=\"650\">\n      <subfield code=\"a\">SCIENCE</subfield>\n      <subfield
+      code=\"x\">Life Sciences</subfield>\n      <subfield code=\"x\">Human Anatomy
+      &amp; Physiology.</subfield>\n      <subfield code=\"2\">bisacsh</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"7\" tag=\"650\">\n      <subfield
+      code=\"a\">MEDICAL</subfield>\n      <subfield code=\"x\">Anatomy.</subfield>\n
+      \     <subfield code=\"2\">bisacsh</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"4\" tag=\"655\">\n      <subfield code=\"a\">Electronic books.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"0\" tag=\"856\">\n      <subfield
+      code=\"3\">Ebook Library</subfield>\n      <subfield code=\"u\">http://public.eblib.com/EBLPublic/PublicView.do?ptiID=477227</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"0\" tag=\"856\">\n      <subfield
+      code=\"3\">ebrary</subfield>\n      <subfield code=\"u\">http://site.ebrary.com/id/10361475</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"0\" tag=\"856\">\n      <subfield
+      code=\"3\">EBSCOhost</subfield>\n      <subfield code=\"u\">http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=305172</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"0\" tag=\"856\">\n      <subfield
+      code=\"3\">MyiLibrary</subfield>\n      <subfield code=\"u\">http://www.myilibrary.com?id=244103</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a22000004a 4500</leader>\n
+      \   <controlfield tag=\"001\">222251097</controlfield>\n    <controlfield tag=\"008\">080409s2009
+      \   nyua     b    001 0 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"010\">\n      <subfield code=\"a\">  2008016410</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">0230219519
+      (alk. paper)</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"a\">9780230219519</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"1\" ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Fimi,
+      Dimitra.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"0\"
+      tag=\"245\">\n      <subfield code=\"a\">Tolkien, race, and cultural history
+      :</subfield>\n      <subfield code=\"b\">from fairies to Hobbits /</subfield>\n
+      \     <subfield code=\"c\">Dimitra Fimi.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">New York :</subfield>\n
+      \     <subfield code=\"b\">Palgrave Macmillan,</subfield>\n      <subfield code=\"c\">c2009.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">xvi, 240 p. :</subfield>\n      <subfield code=\"b\">ill. ;</subfield>\n
+      \     <subfield code=\"c\">23 cm.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"0\" ind2=\" \" tag=\"505\">\n      <subfield code=\"a\">How it all began
+      -- In the beginning were the fairies-- -- \"Fluttering sprites with antennae\"
+      : Victorian and Edwardian fancies -- The fairies, faith, and folklore -- Ideal
+      beings, ideal languages -- The cat and the whiskers : Tolkien's linguistic creation
+      -- \"Linguistic aesthetic\" : sounds, meaning, and the pursuit of beauty --
+      Ideal languages and phonetic spelling -- From myth to history -- The claim to
+      history -- A hierarchical world -- Visualising Middle-Earth : real and imagined
+      material cultures.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"
+      \" tag=\"520\">\n      <subfield code=\"a\">\"Tolkien, Race and Cultural History
+      explores the evolution of Tolkien's mythology by examining how it changed as
+      a result of Tolkien's life story and contemporary cultural and intellectual
+      history. The book considers Tolkien's creative writing as an ever-developing
+      'legendarium': an interconnected web of stories, poems and essays, from his
+      early poems in the 1910s to his latest writings in the early 1970s. Consequently,
+      the book is not restricted to a discussion of Tolkien's best-known works only
+      (The Hobbit, The Lord of the Rings and The Silmarillion), but examines the whole
+      corpus of his legendarium, including the 12-volume History of Middle-earth series,
+      which has received little attention from critics.\"--Jacket.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"1\" ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien,
+      J. R. R.</subfield>\n      <subfield code=\"q\">(John Ronald Reuel),</subfield>\n
+      \     <subfield code=\"d\">1892-1973</subfield>\n      <subfield code=\"x\">Criticism
+      and interpretation.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien, J. R. R.</subfield>\n
+      \     <subfield code=\"q\">(John Ronald Reuel),</subfield>\n      <subfield
+      code=\"d\">1892-1973</subfield>\n      <subfield code=\"x\">Knowledge and learning.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Literature and folklore</subfield>\n      <subfield code=\"z\">England</subfield>\n
+      \     <subfield code=\"x\">History</subfield>\n      <subfield code=\"y\">20th
+      century.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\"
+      tag=\"650\">\n      <subfield code=\"a\">Fantasy literature, English</subfield>\n
+      \     <subfield code=\"x\">History and criticism.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Middle
+      Earth (Imaginary place)</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Myth in literature.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Race in literature.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Culture in literature.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"4\" tag=\"600\">\n      <subfield
+      code=\"a\">Tolkien</subfield>\n      <subfield code=\"x\">J. R. R.</subfield>\n
+      \     <subfield code=\"x\">John Ronald Reuel</subfield>\n      <subfield code=\"x\">1892-1973</subfield>\n
+      \     <subfield code=\"x\">Criticism and interpretation.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"1\" ind2=\"4\" tag=\"600\">\n      <subfield code=\"a\">Tolkien</subfield>\n
+      \     <subfield code=\"x\">J. R. R.</subfield>\n      <subfield code=\"x\">John
+      Ronald Reuel</subfield>\n      <subfield code=\"x\">1892-1973</subfield>\n      <subfield
+      code=\"x\">Knowledge and learning.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"4\" tag=\"650\">\n      <subfield code=\"a\">Literature and
+      folklore</subfield>\n      <subfield code=\"x\">England</subfield>\n      <subfield
+      code=\"x\">History</subfield>\n      <subfield code=\"x\">20th century.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"1\" tag=\"856\">\n      <subfield
+      code=\"3\">Table of contents only</subfield>\n      <subfield code=\"u\">http://catdir.loc.gov/catdir/toc/ecip0815/2008016410.html</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\" \" tag=\"856\">\n      <subfield
+      code=\"m\">V:DE-604</subfield>\n      <subfield code=\"q\">application/pdf</subfield>\n
+      \     <subfield code=\"u\">http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc%5Flibrary=BVB01&amp;doc%5Fnumber=016735524&amp;line%5Fnumber=0002&amp;func%5Fcode=DB%5FRECORDS&amp;service%5Ftype=MEDIA</subfield>\n
+      \     <subfield code=\"3\">Klappentext</subfield>\n    </datafield>\n    <datafield
+      ind1=\"4\" ind2=\"1\" tag=\"856\">\n      <subfield code=\"3\">Table of contents</subfield>\n
+      \     <subfield code=\"m\">V:DE-604</subfield>\n      <subfield code=\"q\">application/pdf</subfield>\n
+      \     <subfield code=\"u\">http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc%5Flibrary=BVB01&amp;doc%5Fnumber=016735524&amp;line%5Fnumber=0001&amp;func%5Fcode=DB%5FRECORDS&amp;service%5Ftype=MEDIA</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000Ia 4500</leader>\n
+      \   <controlfield tag=\"001\">70249525</controlfield>\n    <controlfield tag=\"008\">060630s2006
+      \   ne a     b    001 0 eng d</controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"a\">9042016825 (hd. bd.)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9789042016828 (hd. bd.)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">9789042020627
+      (pbk.)</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n
+      \     <subfield code=\"a\">9042020628 (pbk.)</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"0\" ind2=\"0\" tag=\"245\">\n      <subfield code=\"a\">From
+      hobbits to Hollywood :</subfield>\n      <subfield code=\"b\">essays on Peter
+      Jackson's Lord of the rings /</subfield>\n      <subfield code=\"c\">edited
+      by Ernest Mathijs and Murray Pomerance.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">Amsterdam ;</subfield>\n
+      \     <subfield code=\"a\">New York :</subfield>\n      <subfield code=\"b\">Rodopi,</subfield>\n
+      \     <subfield code=\"c\">2006.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield code=\"a\">xviii, 403 p.
+      :</subfield>\n      <subfield code=\"b\">ill. ;</subfield>\n      <subfield
+      code=\"c\">23 cm.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"
+      \" tag=\"490\">\n      <subfield code=\"a\">Contemporary cinema,</subfield>\n
+      \     <subfield code=\"x\">1572-3070 ;</subfield>\n      <subfield code=\"v\">3</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\" \" tag=\"505\">\n      <subfield
+      code=\"a\">Introduction: there and back again: an editors' tale / Ernest Mathijs
+      and Murray Pomerance -- The lord of the rings as allegory: a multiperspectivist
+      reading / Douglas Kellner -- The lord of the rings and family: a view on text
+      and reception / Ernest Mathijs -- The fading of the elves: eco-catastrophe,
+      technopoly, and bio-security / Sean Cubitt -- On being a 1960s Tolkien reader
+      / Martin Barker -- Epic fantasy and global terrorism / Ken Gelder -- A land
+      of make believe: merchandising and consumption of The lord of the rings / Ian
+      Conrich -- Fic Frodo slash Frodo: fandoms and The lord of the rings / Jennifer
+      Brayton -- The lord of the rings as melodrama / Sarah Kozloff -- Masculinity,
+      whiteness, and social class in The lord of the rings / Lianne McLarty -- Urban
+      legend: architecture in The lord of the rings / Steven Woodward and Kostis Kourelis
+      -- The lord of the rings and the fellowship of the map / Tom Conley -- Enchantments
+      of The lord of the rings: soundtrack, myth, language, and modernity / James
+      Buhler -- \"Wicked, tricksy, false\": race, myth, and Gollum / Cynthia Fuchs
+      -- \"What does the eye demand\": sexuality, forbidden vision and embodiment
+      in The lord of the rings / Ruth Goldberg and Krin Gabbard -- Scale, spectacle
+      and movement: massive software and digital special effects in The lord of the
+      rings / Kirsten Moana Thompson -- Morphing Sean Astin : \"playing fat\" in the
+      age of digital animation / Jerry Mosher -- Gollum and Golem: special effects
+      and the technology of artificial bodies / Tom Gunning -- The laddy vanishes
+      / Murray Pomerance.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\" \" tag=\"520\">\n      <subfield code=\"a\">\"Peter Jackson $1 (Bs film
+      version of The Lord of the Rings (2001-2003) is the grandest achievement of
+      21st century cinema so far. But it is also linked to topical and social concerns
+      including war, terrorism, and cultural imperialism. Its style, symbols, narrative,
+      and structure seem always already linked to politics, cultural definition, problems
+      of cinematic style, and the elemenal mythologies that most profoundly capture
+      our imaginations. From Hobbits to Hollywood: Essays on Peter Jackson $1 (Bs
+      Lord of the Rings treats Jackson $1 (Bs trilogy as having two conditions of
+      existence: an aesthetic and a political. Like other cultural artefacts, it leads
+      a double life as objet d $1 (Bart and public statement about the world, so that
+      nothing in it is ever just cinematically beautiful or tasteful, and nothing
+      is ever just a message or an opinion\"--Cover 4.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Lord
+      of the Rings films.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien, J. R. R.</subfield>\n
+      \     <subfield code=\"q\">(John Ronald Reuel),</subfield>\n      <subfield
+      code=\"d\">1892-1973.</subfield>\n      <subfield code=\"t\">Lord of the rings.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"7\" tag=\"630\">\n      <subfield
+      code=\"a\">The lord of the rings</subfield>\n      <subfield code=\"2\">swd</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Jackson, Peter,</subfield>\n      <subfield code=\"d\">1961-</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Mathijs, Ernest.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Pomerance, Murray,</subfield>\n
+      \     <subfield code=\"d\">1946-</subfield>\n    </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cgm a2200000Ia 4500</leader>\n
+      \   <controlfield tag=\"001\">24875712</controlfield>\n    <controlfield tag=\"008\">911202s1991
+      \   cau096 j          vaeng d</controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"c\">$19.99</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"0\" ind2=\"4\" tag=\"245\">\n      <subfield code=\"a\">The
+      return of the king</subfield>\n      <subfield code=\"h\">[videorecording] :</subfield>\n
+      \     <subfield code=\"b\">a story of Hobbits.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">Santa
+      Monica, Calif. :</subfield>\n      <subfield code=\"b\">Solar Home Video,</subfield>\n
+      \     <subfield code=\"c\">1991.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield code=\"a\">1 videocassette
+      (96 min.) :</subfield>\n      <subfield code=\"b\">sd., col. ;</subfield>\n
+      \     <subfield code=\"c\">1/2 in.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"538\">\n      <subfield code=\"a\">VHS format.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield
+      code=\"a\">Hi-fi, mono, digitally processed.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"0\" ind2=\" \" tag=\"520\">\n      <subfield code=\"a\">Frodo
+      the Hobbit and his faithful sidekick Samwise battle Cark Lord Sauron to save
+      Middle Earth, destroy the cursed Ring of Doom and restore King Aragon to the
+      throne of Gondor. An epic tale of good and evil, this is an awesome conclusion
+      to J.R.R. Tolkien's classic triology of Hobbit stories.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield code=\"a\">Animated
+      fantasy.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\"
+      tag=\"650\">\n      <subfield code=\"a\">Fantasy</subfield>\n      <subfield
+      code=\"v\">Juvenile films.</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Children's films.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Animated films.</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Tolkien, J. R. R.</subfield>\n
+      \     <subfield code=\"q\">(John Ronald Reuel),</subfield>\n      <subfield
+      code=\"d\">1892-1973.</subfield>\n    </datafield>\n    <datafield ind1=\"2\"
+      ind2=\" \" tag=\"710\">\n      <subfield code=\"a\">Solar Home Video.</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000 a 4500</leader>\n
+      \   <controlfield tag=\"001\">619082411</controlfield>\n    <controlfield tag=\"008\">100323s2010
+      \   enka     b    001 0 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"020\">\n      <subfield code=\"a\">9780230272842 (pbk.)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">0230272843 (pbk.)</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Fimi, Dimitra.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"0\" tag=\"245\">\n      <subfield
+      code=\"a\">Tolkien, race, and cultural history :</subfield>\n      <subfield
+      code=\"b\">from fairies to Hobbits /</subfield>\n      <subfield code=\"c\">Dimitra
+      Fimi.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"250\">\n
+      \     <subfield code=\"a\">Pbk. ed.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">Basingstoke :</subfield>\n
+      \     <subfield code=\"b\">Palgrave Macmillan,</subfield>\n      <subfield code=\"c\">2010.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">xvi, 240 p. :</subfield>\n      <subfield code=\"b\">ill. ;</subfield>\n
+      \     <subfield code=\"c\">22 cm.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield code=\"a\">Originally published:
+      2008.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"0\" tag=\"600\">\n
+      \     <subfield code=\"a\">Tolkien, J. R. R.</subfield>\n      <subfield code=\"q\">(John
+      Ronald Reuel),</subfield>\n      <subfield code=\"d\">1892-1973</subfield>\n
+      \     <subfield code=\"x\">Criticism and interpretation.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"1\" ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien,
+      J. R. R.</subfield>\n      <subfield code=\"q\">(John Ronald Reuel),</subfield>\n
+      \     <subfield code=\"d\">1892-1973</subfield>\n      <subfield code=\"x\">Knowledge
+      and learning.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\"
+      tag=\"650\">\n      <subfield code=\"a\">Literature and folklore</subfield>\n
+      \     <subfield code=\"z\">England</subfield>\n      <subfield code=\"x\">History</subfield>\n
+      \     <subfield code=\"y\">20th century.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Fantasy literature,
+      English</subfield>\n      <subfield code=\"x\">History and criticism.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Middle Earth (Imaginary place)</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Myth in literature.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Race in literature.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Culture in literature.</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cam a2200000 a 4500</leader>\n
+      \   <controlfield tag=\"001\">50631420</controlfield>\n    <controlfield tag=\"008\">030210r20022001nyu
+      \     b    001 0 eng  </controlfield>\n    <datafield ind1=\" \" ind2=\" \"
+      tag=\"010\">\n      <subfield code=\"a\">  2003267027</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">1403960259</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield
+      code=\"a\">9781403960252</subfield>\n    </datafield>\n    <datafield ind1=\"1\"
+      ind2=\" \" tag=\"100\">\n      <subfield code=\"a\">Stanton, Michael N.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\"0\" tag=\"245\">\n      <subfield
+      code=\"a\">Hobbits, elves, and wizards :</subfield>\n      <subfield code=\"b\">exploring
+      the wonders and worlds of J.R.R. Tolkien's \"The Lord of the rings\" /</subfield>\n
+      \     <subfield code=\"c\">Michael N. Stanton.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"250\">\n      <subfield code=\"a\">1st
+      Palgrave Macmillan pbk. ed.</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">New York :</subfield>\n
+      \     <subfield code=\"b\">Palgrave Macmillan,</subfield>\n      <subfield code=\"c\">2002.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">xii, 202 p. ;</subfield>\n      <subfield code=\"c\">21 cm.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield
+      code=\"a\">\"Includes a new essay on the first part of The Lord of the rings
+      film trilogy\"--Cover.</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\" \" tag=\"500\">\n      <subfield code=\"a\">Originally published:
+      New York : St. Martin's Press, 2001.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"0\" ind2=\"0\" tag=\"505\">\n      <subfield code=\"g\">ch. 1.</subfield>\n
+      \     <subfield code=\"t\">Backgrounds --</subfield>\n      <subfield code=\"g\">ch.
+      2.</subfield>\n      <subfield code=\"g\">Geography, history, theme --</subfield>\n
+      \     <subfield code=\"g\">ch. 3.</subfield>\n      <subfield code=\"t\">The
+      fellowship of the ring : prologue and book 1 --</subfield>\n      <subfield
+      code=\"g\">ch. 4.</subfield>\n      <subfield code=\"t\">The fellowship of the
+      ring : book 2 --</subfield>\n      <subfield code=\"g\">ch. 5.</subfield>\n
+      \     <subfield code=\"t\">A short interlude --</subfield>\n      <subfield
+      code=\"g\">ch. 6.</subfield>\n      <subfield code=\"t\">The two towers : book
+      3 --</subfield>\n      <subfield code=\"g\">ch. 7.</subfield>\n      <subfield
+      code=\"t\">The two towers : book 4 --</subfield>\n      <subfield code=\"g\">ch.
+      8.</subfield>\n      <subfield code=\"t\">The return of the King : book 5 --</subfield>\n
+      \     <subfield code=\"g\">ch. 9.</subfield>\n      <subfield code=\"t\">The
+      return of the King : book 6 --</subfield>\n      <subfield code=\"g\">ch. 10.</subfield>\n
+      \     <subfield code=\"t\">The elves --</subfield>\n      <subfield code=\"g\">ch.
+      11.</subfield>\n      <subfield code=\"t\">The dwarves --</subfield>\n      <subfield
+      code=\"g\">ch. 12.</subfield>\n      <subfield code=\"t\">The ents --</subfield>\n
+      \     <subfield code=\"g\">ch. 13.</subfield>\n      <subfield code=\"t\">Humankind
+      --</subfield>\n      <subfield code=\"g\">ch. 14.</subfield>\n      <subfield
+      code=\"t\">Darkness, evil, and forms of the enemy --</subfield>\n      <subfield
+      code=\"g\">ch. 15.</subfield>\n      <subfield code=\"t\">On languages --</subfield>\n
+      \     <subfield code=\"g\">ch. 16.</subfield>\n      <subfield code=\"t\">Mind,
+      spirit, and dream in The Lord of the rings.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\"0\" tag=\"600\">\n      <subfield code=\"a\">Tolkien, J. R.
+      R.</subfield>\n      <subfield code=\"q\">(John Ronald Reuel),</subfield>\n
+      \     <subfield code=\"d\">1892-1973.</subfield>\n      <subfield code=\"t\">Lord
+      of the rings.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"0\"
+      tag=\"650\">\n      <subfield code=\"a\">Fantasy fiction, English</subfield>\n
+      \     <subfield code=\"x\">History and criticism.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Middle
+      Earth (Imaginary place)</subfield>\n    </datafield>\n    <datafield ind1=\"
+      \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Hobbits (Fictitious characters)</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"2\" tag=\"856\">\n      <subfield
+      code=\"3\">Contributor biographical information</subfield>\n      <subfield
+      code=\"u\">http://catdir.loc.gov/catdir/bios/hol051/2003267027.html</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"2\" tag=\"856\">\n      <subfield
+      code=\"3\">Publisher description</subfield>\n      <subfield code=\"u\">http://catdir.loc.gov/catdir/description/hol032/2003267027.html</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"4\" ind2=\"1\" tag=\"856\">\n      <subfield
+      code=\"3\">Table of contents</subfield>\n      <subfield code=\"u\">http://catdir.loc.gov/catdir/toc/hol031/2003267027.html</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cgm a2200000Ma 4500</leader>\n
+      \   <controlfield tag=\"001\">53212671</controlfield>\n    <controlfield tag=\"008\">020206p20011979cau097
+      g          vaeng d</controlfield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"020\">\n
+      \     <subfield code=\"a\">0790762633</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"020\">\n      <subfield code=\"a\">9780790762630</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"041\">\n      <subfield
+      code=\"a\">eng</subfield>\n      <subfield code=\"j\">eng</subfield>\n      <subfield
+      code=\"j\">fre</subfield>\n      <subfield code=\"j\">spa</subfield>\n      <subfield
+      code=\"h\">eng</subfield>\n    </datafield>\n    <datafield ind1=\"0\" ind2=\"4\"
+      tag=\"245\">\n      <subfield code=\"a\">The return of the king</subfield>\n
+      \     <subfield code=\"h\">[videorecording] :</subfield>\n      <subfield code=\"b\">a
+      story of the Hobbits /</subfield>\n      <subfield code=\"c\">a Rankin/Bass
+      production ; produced &amp; directed by Arthur Rankin, Jr. and Jules Bass ;
+      adapted for the screen by Romeo Muller.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"3\" ind2=\"0\" tag=\"246\">\n      <subfield code=\"a\">Story of the
+      Hobbits</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"260\">\n
+      \     <subfield code=\"a\">Burbank, CA :</subfield>\n      <subfield code=\"b\">Warner
+      Home Video,</subfield>\n      <subfield code=\"c\">[2001]</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield code=\"a\">1
+      videodisc (97 min.) :</subfield>\n      <subfield code=\"b\">sd., col. ;</subfield>\n
+      \     <subfield code=\"c\">4 3/4 in.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\" \" tag=\"538\">\n      <subfield code=\"a\">DVD, Dolby digital
+      mono.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"546\">\n
+      \     <subfield code=\"a\">English language track with optional French and Spanish
+      subtitles.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\" \"
+      tag=\"546\">\n      <subfield code=\"a\">Closed-captioned.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield code=\"a\">Based
+      on the original version of The Hobbit and The return of the king by J.R.R. Tolkien.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield
+      code=\"a\">Originally broadcast on television in 1980.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"520\">\n      <subfield code=\"a\">Animated
+      version of Tolkien's story of the battle between good and evil denizens in which
+      Frodo journeys to Mt. Doom to destroy his magic ring and is pitted against the
+      forces of Sauron.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"
+      \" tag=\"500\">\n      <subfield code=\"a\">Special features: Cast and crew;
+      J.R.R. Tolkien facts and trivia; Of men and wizards.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Animated
+      television programs.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Children's television programs.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield
+      code=\"a\">Fantasy television programs.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Films for the
+      hearing impaired.</subfield>\n    </datafield>\n    <datafield ind1=\" \" ind2=\"7\"
+      tag=\"655\">\n      <subfield code=\"a\">Animated television programs.</subfield>\n
+      \     <subfield code=\"2\">lcgft</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"7\" tag=\"655\">\n      <subfield code=\"a\">Children's television
+      programs.</subfield>\n      <subfield code=\"2\">lcgft</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\"7\" tag=\"655\">\n      <subfield code=\"a\">Fantasy
+      television programs.</subfield>\n      <subfield code=\"2\">lcgft</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"7\" tag=\"655\">\n      <subfield
+      code=\"a\">Television musicals.</subfield>\n      <subfield code=\"2\">lcgft</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\"7\" tag=\"655\">\n      <subfield
+      code=\"a\">Television programs for the hearing impaired.</subfield>\n      <subfield
+      code=\"2\">lcgft</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"
+      \" tag=\"700\">\n      <subfield code=\"a\">Rankin, Arthur,</subfield>\n      <subfield
+      code=\"c\">Jr.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\"
+      \" tag=\"700\">\n      <subfield code=\"a\">Bass, Jules.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Muller,
+      Romeo.</subfield>\n    </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n
+      \     <subfield code=\"a\">Bean, Orson.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Bikel, Theodore.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Conrad, William,</subfield>\n      <subfield code=\"d\">1920-1994.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Huston, John,</subfield>\n      <subfield code=\"d\">1906-1987.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">McDowall, Roddy.</subfield>\n    </datafield>\n    <datafield ind1=\"0\"
+      ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Brother Theodore,</subfield>\n
+      \     <subfield code=\"d\">1906-2001.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield code=\"a\">Frees, Paul.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Yarbrough, Glenn,</subfield>\n      <subfield code=\"d\">1930-</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"1\" ind2=\" \" tag=\"700\">\n      <subfield
+      code=\"a\">Tolkien, J. R. R.</subfield>\n      <subfield code=\"q\">(John Ronald
+      Reuel),</subfield>\n      <subfield code=\"d\">1892-1973.</subfield>\n      <subfield
+      code=\"t\">Return of the king.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"2\" ind2=\" \" tag=\"710\">\n      <subfield code=\"a\">Rankin/Bass Productions.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"2\" ind2=\" \" tag=\"710\">\n      <subfield
+      code=\"a\">Warner Home Video (Firm)</subfield>\n    </datafield>\n  </record>\n</recordData>\n</record>\n<record>\n<recordSchema>marcxml</recordSchema>\n<recordPacking>xml</recordPacking>\n<recordData>\n<record
+      xmlns=\"http://www.loc.gov/MARC21/slim\">\n    <leader>00000cjm a2200000Ia 4500</leader>\n
+      \   <controlfield tag=\"001\">14198891</controlfield>\n    <controlfield tag=\"008\">860909s1968
+      \   nyuppnn  z        n eng d</controlfield>\n    <datafield ind1=\"2\" ind2=\"
+      \" tag=\"110\">\n      <subfield code=\"a\">Hobbits (Musical group)</subfield>\n
+      \     <subfield code=\"4\">prf</subfield>\n    </datafield>\n    <datafield
+      ind1=\"1\" ind2=\"0\" tag=\"245\">\n      <subfield code=\"a\">Men and doors</subfield>\n
+      \     <subfield code=\"h\">[sound recording] :</subfield>\n      <subfield code=\"b\">The
+      Hobbits communicate.</subfield>\n    </datafield>\n    <datafield ind1=\" \"
+      ind2=\" \" tag=\"260\">\n      <subfield code=\"a\">New York :</subfield>\n
+      \     <subfield code=\"b\">Decca,</subfield>\n      <subfield code=\"c\">[1968]</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"300\">\n      <subfield
+      code=\"a\">1 sound disc :</subfield>\n      <subfield code=\"b\">analog, 33
+      1/3 rpm, stereo. ;</subfield>\n      <subfield code=\"c\">12 in.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield
+      code=\"a\">Popular songs with instrumental ensemble.</subfield>\n    </datafield>\n
+      \   <datafield ind1=\" \" ind2=\" \" tag=\"500\">\n      <subfield code=\"a\">Verse
+      by Pablo Serrano translated from the original Spanish by Dr. Leibert Turner
+      on container.</subfield>\n    </datafield>\n    <datafield ind1=\"0\" ind2=\"
+      \" tag=\"505\">\n      <subfield code=\"a\">Men and doors -- España baby --
+      Let me make my own mistakes --Feeling -- Words get in the way -- The journey
+      -- Will you be ready for tomorrow -- Love is -- Strawberry children -- University
+      of the street --Artificial face.</subfield>\n    </datafield>\n    <datafield
+      ind1=\" \" ind2=\"0\" tag=\"650\">\n      <subfield code=\"a\">Popular music.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield
+      code=\"a\">España baby.</subfield>\n    </datafield>\n    <datafield ind1=\"0\"
+      ind2=\"1\" tag=\"740\">\n      <subfield code=\"a\">Let me make my own mistakes.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield
+      code=\"a\">Feeling.</subfield>\n    </datafield>\n    <datafield ind1=\"0\"
+      ind2=\"1\" tag=\"740\">\n      <subfield code=\"a\">Words get in the way.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield
+      code=\"a\">Journey.</subfield>\n    </datafield>\n    <datafield ind1=\"0\"
+      ind2=\"1\" tag=\"740\">\n      <subfield code=\"a\">Will you be ready for tomorrow.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield
+      code=\"a\">Love is.</subfield>\n    </datafield>\n    <datafield ind1=\"0\"
+      ind2=\"1\" tag=\"740\">\n      <subfield code=\"a\">Strawberry children.</subfield>\n
+      \   </datafield>\n    <datafield ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield
+      code=\"a\">University of the street.</subfield>\n    </datafield>\n    <datafield
+      ind1=\"0\" ind2=\"1\" tag=\"740\">\n      <subfield code=\"a\">Artificial face.</subfield>\n
+      \   </datafield>\n  </record>\n</recordData>\n</record>\n</records>\n<nextRecordPosition>11</nextRecordPosition>\n<resultSetIdleTime/>\n<echoedSearchRetrieveRequest
+      xmlns:srw=\"http://www.loc.gov/zing/srw/\">\n<version>1.1</version>\n<query>hobbits</query>\n<maximumRecords>10</maximumRecords>\n<recordPacking>xml</recordPacking>\n<startRecord>1</startRecord>\n<sortKeys>relevance</sortKeys>\n<wskey><WSKEY></wskey>\n</echoedSearchRetrieveRequest>\n</searchRetrieveResponse>\n"
+    http_version: '1.1'

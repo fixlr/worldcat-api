@@ -1,0 +1,69 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.worldcat.org:80/webservices/catalog/content/libraries/164801908?oclcsymbol=YGM&wskey=<WSKEY>
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 23 Feb 2012 15:03:43 GMT
+      server:
+      - Apache
+      content-length:
+      - '1020'
+      content-type:
+      - text/xml;charset=utf-8
+    body: ! '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+      <holdings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.loc.gov/standards/iso20775/N121_ISOholdings_v4.xsd">
+
+      <holding>
+
+      <institutionIdentifier>
+
+      <value>YGM</value>
+
+      <typeOrSource>
+
+      <pointer>http://worldcat.org/registry/institutions/</pointer>
+
+      </typeOrSource>
+
+      </institutionIdentifier>
+
+      <physicalLocation>SUNY Geneseo</physicalLocation>
+
+      <physicalAddress>
+
+      <text>Geneseo, NY 14454 United States</text>
+
+      </physicalAddress>
+
+      <electronicAddress>
+
+      <text>http://www.worldcat.org/wcpa/oclc/164801908?page=frame&amp;url=http%3A%2F%2Fgen.sunyconnect.suny.edu%3A4420%2FF%2F%3Ffunc%3Dfind-b%26find_code%3DISBN%26request%3D0395476909%26checksum%3Dcf766d43f7316dff911db7259a38c9f1&amp;title=SUNY+Geneseo&amp;linktype=opac&amp;detail=YGM%3ASUNY+Geneseo%3AAcademic
+      Library&amp;app=wcapi&amp;id=</text>
+
+      </electronicAddress>
+
+      <holdingSimple>
+
+      <copiesSummary>
+
+      <copiesCount>1</copiesCount>
+
+      </copiesSummary>
+
+      </holdingSimple>
+
+      </holding>
+
+      </holdings>
+
+'
+    http_version: '1.1'

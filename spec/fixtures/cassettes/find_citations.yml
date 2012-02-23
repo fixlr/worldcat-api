@@ -1,0 +1,23 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://www.worldcat.org:80/webservices/catalog/content/citations/50894?wskey=<WSKEY>
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 23 Feb 2012 15:03:45 GMT
+      server:
+      - Apache
+      content-length:
+      - '135'
+      content-type:
+      - text/plain;charset=utf-8
+    body: ! '<p class="citation_style_MLA">Tolkien, J R. R. <i>The Hobbit, Or, There
+      and Back Again</i>. Boston: Houghton Mifflin, 1966. Print. </p>'
+    http_version: '1.1'
