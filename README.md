@@ -1,5 +1,7 @@
 # worldcat-api
 
+[![Build Status](https://secure.travis-ci.org/fixlr/worldcat-api.png?branch=master)](http://travis-ci.org/fixlr/worldcat-api)
+
 Ruby wrapper for the [Worldcat Search API](http://oclc.org/developer/services/WCAPI).
 
 ## Getting Started
